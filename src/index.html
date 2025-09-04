@@ -29,8 +29,8 @@
         <div class="hidden md:flex text-xl text-white gap-8">
             <a class="font-semibold hover:text-yellow-900" href="#home">Home</a>
             <a class="font-semibold hover:text-yellow-900" href="#fav">Favorites</a>
-            <a class="font-semibold hover:text-yellow-900" href="">Care</a>
-            <a class="font-semibold hover:text-yellow-900" href="">Products</a>
+            <a class="font-semibold hover:text-yellow-900" href="#care">Care</a>
+            <a class="font-semibold hover:text-yellow-900" href="#card">Products</a>
             <a class="font-semibold hover:text-yellow-900" href="">Contact</a>
         </div>
 
@@ -61,8 +61,8 @@
                     Now</button>
             </div>
         </div>
-        <div class="bg-amber-700 rounded-full flex justify-center items-center mt-10 md:mt-0 p-6">
-            <img class="w-60 md:w-[400px] lg:w-[500px] rotate-6" src="/img/home-chips.png">
+        <div class="bg-amber-700 rounded-full flex justify-center items-center mt-10 md:mt-0 md:mb-7 p-6">
+            <img class="w-60 md:w-100 rotate-6" src="/img/home-chips.png">
         </div>
     </section>
     <!-- home ends -->
@@ -91,13 +91,13 @@
         <!-- Back to top button -->
         <button
             class="fixed bottom-4 right-4 bg-amber-500 p-3 rounded-full shadow-lg text-2xl hover:bg-amber-600">⬆️</button>
-    </section>
+    </section >
     <!-- fav section end -->
 
     <!-- mid section start -->
-    <section>
+    <section id="care">
         <div class=" w-full flex justify-center items-center text-center py-8">
-            <h1 class="text-2xl md:text-7xl font-extrabold text-white">ENJOY AND TAKE<br> CARE OF YOUR HEALTH</h1>
+            <h1 class="text-2xl md:text-5xl font-extrabold text-white">ENJOY AND TAKE<br> CARE OF YOUR HEALTH</h1>
         </div>
         <div class="md:flex justify-center items-center">
             <div class="m-8 flex flex-col gap-8 text-white text-lg md:text-xl">
@@ -117,10 +117,107 @@
                 <img class="w-64 md:w-[400px] lg:w-[500px]" src="/img/care-chips.png">
             </div>
         </div>
-
+        <div class="w-full h-44 mt-16  bg-teal-800 flex justify-center items-center">
+            <div class="w-full  p-8 mt-10 mb-10 bg-amber-500 flex justify-around ">
+                <h1 class="font-bold text-2xl"> <i class="fa-solid fa-leaf"></i> GOOD FOR NATURE</h1>
+                <h1 class="font-bold text-2xl"> <i class="fa-solid fa-shield-heart"></i>LOW CALORIES</h1>
+            </div>
+        </div>
     </section>
     <!-- mid section ends -->
 
+     <!-- product section start -->
+    <section id="card">
+        <div class="flex justify-center items-center m-15 ">
+            <h1 class="text-4xl text-white font-extrabold md:text-5xl">BEST SELLING PRODUCT</h1>
+        </div>
+        <div class="m-10 p-5 gap-10 grid grid-cols-2 md:grid-cols-3 md:ml-96 md:mr-96 md:gap-5 md:mt-32 text-white">
+
+            <div class="w-auto bg-teal-900 md:w-[70%] rounded-2xl shadow-lg hover:scale-105 transition-transform">
+                <img class="h-[150px] w-full object-contain p-4" src="/img/product-chips-1.png">
+                <div class="text-center p-2">
+                    <p class="text-amber-100">Crab</p>
+                    <h1 class="text-lg font-extrabold md:text-2xl">Chips</h1>
+                    <div class="flex justify-between items-center mt-2 px-4">
+                        <h2>$10</h2>
+                        <i class="fa-solid fa-cart-shopping cursor-pointer text-xl hover:text-amber-200"></i>
+                    </div>
+                </div>
+            </div>
+
+         <div class="w-auto bg-teal-900 rounded-2xl md:w-[70%]  shadow-lg hover:scale-105 transition-transform">
+                <img class="h-[150px] w-full object-contain p-4" src="/img/product-chips-2.png">
+                <div class="text-center p-2">
+                    <p class="text-amber-100">Chinese</p>
+                    <h1 class="text-lg font-extrabold md:text-2xl">Chips</h1>
+                    <div class="flex justify-between items-center mt-2 px-4">
+                        <h2>$10</h2>
+                        <i class="fa-solid fa-cart-shopping cursor-pointer text-xl hover:text-amber-200"></i>
+                    </div>
+                </div>
+            </div>
+
+             <div class="w-auto bg-teal-900 rounded-2xl md:w-[70%]  shadow-lg hover:scale-105 transition-transform">
+                <img class="h-[150px] w-full object-contain p-4" src="/img/product-chips-3.png">
+                <div class="text-center p-2">
+                    <p class="text-amber-100">Chilie</p>
+                    <h1 class="text-lg font-extrabold md:text-2xl">Chips</h1>
+                    <div class="flex justify-between items-center mt-2 px-4">
+                        <h2>$40</h2>
+                        <i class="fa-solid fa-cart-shopping cursor-pointer text-xl hover:text-amber-200"></i>
+                    </div>
+                </div>
+            </div>
+
+             <div class="w-auto bg-teal-900 rounded-2xl md:w-[70%]  shadow-lg hover:scale-105 transition-transform">
+                <img class="h-[150px] w-full object-contain p-4" src="/img/product-chips-4.png">
+                <div class="text-center p-2">
+                    <p class="text-amber-100">Onion</p>
+                    <h1 class="text-lg font-extrabold md:text-2xl">Chips</h1>
+                    <div class="flex justify-between items-center mt-2 px-4">
+                        <h2>$20</h2>
+                        <i class="fa-solid fa-cart-shopping cursor-pointer text-xl hover:text-amber-200"></i>
+                    </div>
+                </div>
+            </div>
+
+             <div class="w-auto bg-teal-900 rounded-2xl md:w-[70%]  shadow-lg hover:scale-105 transition-transform">
+                <img class="h-[150px] w-full object-contain p-4" src="/img/product-chips-5.png">
+                <div class="text-center p-2">
+                    <p class="text-amber-100">Chinease</p>
+                    <h1 class="text-lg font-extrabold md:text-2xl">Chips</h1>
+                    <div class="flex justify-between items-center mt-2 px-4">
+                        <h2>$50</h2>
+                        <i class="fa-solid fa-cart-shopping cursor-pointer text-xl hover:text-amber-200"></i>
+                    </div>
+                </div>
+            </div>
+
+             <div class="w-auto bg-teal-900 rounded-2xl md:w-[70%]  shadow-lg hover:scale-105 transition-transform">
+                <img class="h-[150px] w-full object-contain p-4" src="/img/product-chips-1.png">
+                <div class="text-center p-2">
+                    <p class="text-amber-100">BBQ</p>
+                    <h1 class="text-lg font-extrabold md:text-2xl">Chips</h1>
+                    <div class="flex justify-between items-center mt-2 px-4">
+                        <h2>$40</h2>
+                        <i class="fa-solid fa-cart-shopping cursor-pointer text-xl hover:text-amber-200"></i>
+                    </div>
+                </div>
+            </div>
+
+    
+
+       
+        </div>
+
+
+
+    </section>
+    <!-- Product section ends -->
+
+
+    
 </body>
 <script src="../script.js"></script>
+
 </html>
