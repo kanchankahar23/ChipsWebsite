@@ -212,6 +212,9 @@
   .m-2 {
     margin: calc(var(--spacing) * 2);
   }
+  .m-5 {
+    margin: calc(var(--spacing) * 5);
+  }
   .m-8 {
     margin: calc(var(--spacing) * 8);
   }
@@ -220,6 +223,9 @@
   }
   .m-15 {
     margin: calc(var(--spacing) * 15);
+  }
+  .m-16 {
+    margin: calc(var(--spacing) * 16);
   }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
