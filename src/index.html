@@ -20,22 +20,22 @@
 <body class="bg-teal-600">
 
     <!-- nav bar starts -->
-    <div class="bg-teal-700 sticky top-0 w-full h-20 flex justify-around items-center">
+    <div class="bg-teal-700  fixed z-50 top-0 bottom-8WS w-full  h-24 flex justify-around items-center">
         <div class="text-white font-extrabold text-2xl">
-            <img class="m-2 h-20" src="/img/ChatGPT Image Aug 20, 2025, 02_37_14 PM.png">
+            <img class="m-2 h-24" src="/img/ChatGPT Image Aug 20, 2025, 02_37_14 PM.png">
         </div>
 
         <!-- Desktop Menu -->
-        <div class="hidden md:flex text-xl text-white gap-8">
+        <div class="hidden md:flex text-3xl text-white gap-8">
             <a class="font-semibold hover:text-yellow-900" href="#home">Home</a>
             <a class="font-semibold hover:text-yellow-900" href="#fav">Favorites</a>
             <a class="font-semibold hover:text-yellow-900" href="#care">Care</a>
             <a class="font-semibold hover:text-yellow-900" href="#card">Products</a>
-            <a class="font-semibold hover:text-yellow-900" href="">Contact</a>
+            <a class="font-semibold hover:text-yellow-900" href="#contact">Contact</a>
         </div>
 
         <!-- Social Icons -->
-        <div class="hidden md:flex text-2xl gap-3 text-white cursor-pointer">
+        <div class="hidden md:flex text-3xl gap-3 text-white cursor-pointer">
             <i class="hover:text-yellow-900 fa-brands fa-facebook"></i>
             <i class="hover:text-yellow-900 fa-brands fa-instagram"></i>
             <i class="hover:text-yellow-900 fa-brands fa-x-twitter"></i>
@@ -49,26 +49,29 @@
     <!-- nav ends -->
 
     <!-- home starts -->
-    <section id="home" class="flex flex-col md:flex-row justify-center md:justify-around items-center md:gap-16 m-10">
+    <section id="home"
+        class="flex flex-col md:flex-row justify-center md:justify-around mt-36 items-center md:mt-40 md:gap-16 m-10">
         <div class="flex flex-col justify-center items-center text-center gap-6">
-            <h1 class="font-sans text-5xl md:text-6xl font-extrabold text-white">SNACK <br>WITH NO <br>LIMITS</h1>
-            <p class="text-white font-semibold md:text-lg">When you are hungry and don't have time<br> to cook, snacks
+            <h1 class="font-sans text-5xl md:text-8xl font-extrabold text-white">SNACK <br>WITH NO <br>LIMITS</h1>
+            <p class="text-white font-semibold md:text-3xl">When you are hungry and don't have time<br> to cook, snacks
                 are the perfect solution, always prepare<br> for midday hunger.</p>
             <div class="flex gap-6 mt-4">
-                <button class="rounded-3xl font-semibold cursor-pointer bg-amber-500 p-3 hover:bg-amber-600">Snack
+                <button
+                    class="rounded-3xl md:text-2xl font-semibold cursor-pointer bg-amber-500 p-3 md:p-4 hover:bg-amber-300">Snack
                     Now</button>
-                <button class="rounded-3xl font-semibold cursor-pointer bg-amber-500 p-3 hover:bg-amber-600">Buy
+                <button
+                    class="rounded-3xl md:text-2xl font-semibold cursor-pointer bg-amber-500 p-3 hover:bg-amber-300">Buy
                     Now</button>
             </div>
         </div>
-        <div class="bg-amber-700 rounded-full flex justify-center items-center mt-10 md:mt-0 md:mb-7 p-6">
-            <img class="w-60 md:w-100 rotate-6" src="/img/home-chips.png">
+        <div class="bg-amber-700 rounded-full flex justify-center items-center mt-10 md:w-110 md:mt-20 md:mb-7 p-6">
+            <img class="w-60 md:w-100 md:mt-3 rotate-6" src="/img/home-chips.png">
         </div>
     </section>
     <!-- home ends -->
 
     <!-- fav section start -->
-    <section id="fav" class="flex flex-col justify-center items-center mt-10 text-center">
+    <section id="fav" class="flex flex-col justify-center items-center mt-20 md:mt-32 md:mb-24 md: text-center">
         <h1 class="text-3xl md:text-5xl font-bold text-white p-6">DISCOVER YOUR <br> FAVORITE FLAVORS</h1>
         <p class="text-white md:text-lg max-w-2xl">Try some exotic flavors or delicious toppings. We have collected
             <br>some delicious snack recipes from around the world for you.
@@ -88,19 +91,20 @@
 
             </div>
         </div>
-        <!-- Back to top button -->
-        <button
-            class="fixed bottom-4 right-4 bg-amber-500 p-3 rounded-full shadow-lg text-2xl hover:bg-amber-600">⬆️</button>
     </section>
+    <!-- Back to top button -->
+    <button
+        class="fixed bottom-4 right-4 bg-amber-500 p-3 rounded-full shadow-lg text-2xl hover:bg-amber-200">⬆️</button>
+
     <!-- fav section end -->
 
     <!-- mid section start -->
-    <section id="care">
-        <div class=" w-full flex justify-center items-center text-center py-8">
+    <section id="care" class=" md:mb-16">
+        <div class=" w-full flex justify-center items-center text-center py-8 md:mb-10">
             <h1 class="text-2xl md:text-5xl font-extrabold text-white">ENJOY AND TAKE<br> CARE OF YOUR HEALTH</h1>
         </div>
-        <div class="md:flex justify-center items-center">
-            <div class="m-8 flex flex-col gap-8 text-white text-lg md:text-xl">
+        <div class="md:flex justify-center items-center ">
+            <div class="m-8 md:w-[40%] flex flex-col gap-10 text-white text-lg md:text-2xl">
                 <div><i class="fa-solid fa-leaf text-amber-500"></i> The potatoes that are made into snacks are grown
                     and
                     harvested and are 100% organic.</div>
@@ -113,11 +117,11 @@
                     for good health.</div>
             </div>
 
-            <div class="flex justify-center mt-8">
+            <div class="flex justify-center mt-8 ">
                 <img class="w-64 md:w-[400px] lg:w-[500px]" src="/img/care-chips.png">
             </div>
         </div>
-        <div class="w-full h-44 mt-16  bg-teal-800 flex justify-center items-center">
+        <div class="w-full h-44 mt-20  bg-teal-800 flex justify-center items-center">
             <div class="w-full  p-8 mt-10 mb-10 bg-amber-500 flex justify-around ">
                 <h1 class="font-bold text-2xl"> <i class="fa-solid fa-leaf"></i> GOOD FOR NATURE</h1>
                 <h1 class="font-bold text-2xl"> <i class="fa-solid fa-shield-heart"></i>LOW CALORIES</h1>
@@ -215,47 +219,84 @@
     </section>
     <!-- Product section ends -->
 
-
     <!-- contact section starts -->
-    <section>
-         
-        <div class="bg-teal-800 m-10 rounded-2xl flex flex-col justify-center items-center text-center md:flex-row" >
-           <div class="m-16 font-extrabold text-white">
-                <h1 class="text-4xl">CONTACT US TO <br>EAT CHIPS</h1>
-            </div>
-            
-            <div class="text-white text-3xl flex flex-col ">
-                <h1 class="font-bold">Write to us</h1>
-                <div class="flex items-center p-5  ">
-                    <i class="text-amber-500 text- fa-brands fa-whatsapp"></i>
-                    <i class="text-amber-500 text- fa-brands fa-facebook-messenger"></i>
-                    <i class="text-amber-500 text- fa-solid fa-envelope"></i>
+    <section id="contact" class="bg-teal-800 m-5 md:m-20 rounded-2xl md:mt-40 md:w-[70%] md:mx-auto p-6">
+        <!-- Heading -->
+
+        <div class="font-extrabold text-white text-center mb-6">
+            <h1 class="text-3xl md:text-4xl">CONTACT US TO <br>EAT CHIPS</h1>
+        </div>
+
+        <!-- Contact Info -->
+        <div
+            class="flex flex-col md:flex-row  md:text-3xl  md:mt-10 justify-around items-center text-center md:items-start gap-8">
+            <div
+                class="flex flex-col md:flex-row  md:mt-20 justify-around items-center text-center md:items-start gap-8">
+                <!-- Write to us -->
+                <div class="text-white text-lg md:text-2xl flex flex-col items-center md:items-start">
+                    <h1 class="font-bold mb-3">Write to us</h1>
+                    <div class="flex gap-5">
+                        <i class="hover:text-amber-200 md:text-3xl text-amber-500 text-2xl fa-brands fa-whatsapp"></i>
+                        <i
+                            class="hover:text-amber-200 md:text-3xl text-amber-500 text-2xl fa-brands fa-facebook-messenger"></i>
+                        <i class="hover:text-amber-200 md:text-3xl text-amber-500 text-2xl fa-solid fa-envelope"></i>
+                    </div>
+                </div>
+
+                <!-- Call Us -->
+                <div class="text-white text-lg md:text-2xl">
+                    <h1 class="font-bold text-2xl md:text-3xl mb-2">Call Us</h1>
+                    <h2 class="font-bold">+00-987-7654-321</h2>
+                    <h2 class="font-bold">+11-012345</h2>
+                </div>
+
+                <!-- Find us -->
+                <div class="text-white text-lg md:text-2xl">
+                    <h1 class="text-2xl md:text-3xl font-bold mb-2">Find us here</h1>
+                    <h2>Uma-Sun city-peru</h2>
+                    <h2>Av.Moon #4321</h2>
                 </div>
             </div>
-            <div class="text-white m-8 ">
-                <h1 class="font-bold text-3xl">Call Us</h1>
-                <h2 class="font-bold">+00-987-7654-321</h2>
-                <h2 class="font-bold">+11-012345</h2>
-            </div>
-            <div class="text-white">
-                <h1 class="text-3xl font-bold mt-10">Find us here</h1>
-                <h2>Uma-Sun city-peru</h2>
-                <h2>Av.Moon #4321</h2>
-            </div>
+
+
+            <!-- Contact image -->
             <div>
-                <img class="pt-11" src="/img/contact.png">
+                <img class="w-48 sm:w-60 md:w-[300px]" src="/img/contact.png" alt="Contact Us">
             </div>
         </div>
+
     </section>
-    <footer>
-        <h1>CHIPS</h1>
-        <div>
-            <h1>Terms & Agreements </h1>
-                <h1>Privacy Policy</h1>
+    
+        <div class=" hidden bg-teal-800 p-60">
+            <div class="flex flex-col justify-center  items-center md:flex text-3xl text-white gap-14">
+                <a class="font-semibold hover:text-yellow-900" href="#home">Home</a>
+                <a class="font-semibold hover:text-yellow-900" href="#fav">Favorites</a>
+                <a class="font-semibold hover:text-yellow-900" href="#care">Care</a>
+                <a class="font-semibold hover:text-yellow-900" href="#card">Products</a>
+                <a class="font-semibold hover:text-yellow-900" href="#contact">Contact</a>
+            </div>
+            <!-- Social Icons -->
+            <div class=" md:flex text-3xl gap-3 flex justify-center items-center mt-20 text-white cursor-pointer">
+                <i class="hover:text-yellow-900 fa-brands fa-facebook"></i>
+                <i class="hover:text-yellow-900 fa-brands fa-instagram"></i>
+                <i class="hover:text-yellow-900 fa-brands fa-x-twitter"></i>
+            </div>
         </div>
-        <div>
-        <h1>@All Rights Reserved By Kanchan</h1>
+
+  
+    <!-- Footer -->
+    <footer class=" text-white w-full text-center text-xl py-6 mt-6 ">
+        <h1 class="text-3xl font-extrabold">CHIPS</h1>
+        <div class="md:flex md:justify-center md:items-center md:flex-col">
+            <div class="flex flex-row md:flex-row justify-center md:text-2xl gap-6 my-2">
+                <h1 class=" hover:text-amber-500">Terms & Agreements</h1>
+                <h1 class=" hover:text-amber-500">Privacy Policy</h1>
+
+            </div>
+            <h1 class="font-bold  md:text-2xl md:text-center md:flex md:flex-row">@All Rights Reserved By Kanchan</h1>
         </div>
+
+
     </footer>
 
 
