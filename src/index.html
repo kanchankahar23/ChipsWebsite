@@ -11,6 +11,11 @@
     html,
     body {
         overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+
+    section {
+        scroll-margin-top: 6rem;
     }
 </style>
 
@@ -43,10 +48,45 @@
 
         <!-- Mobile Hamburger -->
         <div class="md:hidden">
-            <a class="toggle text-4xl font-semibold text-yellow-900" href="#">&#8801;</a>
+            <div id="menubar" class="toggle text-4xl font-semibold text-yellow-900 cursor-pointer " href="#">&#8801;
+            </div>
         </div>
     </div>
+
+
+    <!-- sidebar -->
+    <div id="sidebar"
+        class="bg-teal-800 fixed top-0 left-0 w-[80%] h-full transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
+
+        <div id="toggle" class="text-right text-white p-5 h-0 text-2xl ">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="p-10 h-auto">
+
+            <div class="flex flex-col md:flex text-3xl text-white gap-10">
+                <a class="font-semibold hover:text-yellow-900" href="#home">Home</a>
+                <a class="font-semibold hover:text-yellow-900" href="#fav">Favorites</a>
+                <a class="font-semibold hover:text-yellow-900" href="#care">Care</a>
+                <a class="font-semibold hover:text-yellow-900" href="#card">Products</a>
+                <a class="font-semibold hover:text-yellow-900" href="#contact">Contact</a>
+            </div>
+            <!-- Social Icons -->
+
+        </div>
+
+        <div class=" text-right m-5 md:flex text-3xl gap-3 flex mt-20 text-white cursor-pointer">
+            <i class="hover:text-yellow-900 fa-brands fa-facebook"></i>
+            <i class="hover:text-yellow-900 fa-brands fa-instagram"></i>
+            <i class="hover:text-yellow-900 fa-brands fa-x-twitter"></i>
+
+        </div>
+
+
+
+    </div>
     <!-- nav ends -->
+
+
 
     <!-- home starts -->
     <section id="home"
@@ -65,19 +105,21 @@
             </div>
         </div>
         <div class="bg-amber-700 rounded-full flex justify-center items-center mt-10 md:w-110 md:mt-20 md:mb-7 p-6">
-            <img class="w-60 md:w-100 md:mt-3 rotate-6" src="/img/home-chips.png">
+            <img class="w-60 md:w-100 md:mt-3 rotate-6 hover:scale-110 transition-transform" src="/img/home-chips.png">
         </div>
     </section>
     <!-- home ends -->
 
+
     <!-- fav section start -->
     <section id="fav" class="flex flex-col justify-center items-center mt-20 md:mt-32 md:mb-24 md: text-center">
         <h1 class="text-3xl md:text-5xl font-bold text-white p-6">DISCOVER YOUR <br> FAVORITE FLAVORS</h1>
-        <p class="text-white md:text-lg max-w-2xl">Try some exotic flavors or delicious toppings. We have collected
+        <p class="text-white text-xl md:text-lg max-w-2xl">Try some exotic flavors or delicious toppings. We have
+            collected
             <br>some delicious snack recipes from around the world for you.
         </p>
 
-        <div class=" flex mt-15 flex-row  md:w-[60%]  ">
+        <div class=" flex mt-16 flex-row  md:w-[60%]  ">
             <div>
                 <img class="p-8 md:p-16" src="/img/favorite-chips-1.png">
 
@@ -92,14 +134,17 @@
             </div>
         </div>
     </section>
-    <!-- Back to top button -->
-    <button
-        class="fixed bottom-4 right-4 bg-amber-500 p-3 rounded-full shadow-lg text-2xl hover:bg-amber-200">⬆️</button>
 
+
+    <!-- Back to top button -->
+    <button id="scrollup"
+        class="fixed bottom-4 right-4 bg-amber-500 p-3 rounded-full shadow-lg text-2xl hover:bg-amber-200">⬆️</button>
     <!-- fav section end -->
 
+
+
     <!-- mid section start -->
-    <section id="care" class=" md:mb-16">
+    <section id="care" class=" mt-12 md:mb-16">
         <div class=" w-full flex justify-center items-center text-center py-8 md:mb-10">
             <h1 class="text-2xl md:text-5xl font-extrabold text-white">ENJOY AND TAKE<br> CARE OF YOUR HEALTH</h1>
         </div>
@@ -129,6 +174,7 @@
         </div>
     </section>
     <!-- mid section ends -->
+
 
     <!-- product section start -->
     <section id="card">
@@ -219,6 +265,8 @@
     </section>
     <!-- Product section ends -->
 
+
+
     <!-- contact section starts -->
     <section id="contact" class="bg-teal-800 m-5 md:m-20 rounded-2xl md:mt-40 md:w-[70%] md:mx-auto p-6">
         <!-- Heading -->
@@ -266,24 +314,9 @@
         </div>
 
     </section>
-    
-        <div class=" hidden bg-teal-800 p-60">
-            <div class="flex flex-col justify-center  items-center md:flex text-3xl text-white gap-14">
-                <a class="font-semibold hover:text-yellow-900" href="#home">Home</a>
-                <a class="font-semibold hover:text-yellow-900" href="#fav">Favorites</a>
-                <a class="font-semibold hover:text-yellow-900" href="#care">Care</a>
-                <a class="font-semibold hover:text-yellow-900" href="#card">Products</a>
-                <a class="font-semibold hover:text-yellow-900" href="#contact">Contact</a>
-            </div>
-            <!-- Social Icons -->
-            <div class=" md:flex text-3xl gap-3 flex justify-center items-center mt-20 text-white cursor-pointer">
-                <i class="hover:text-yellow-900 fa-brands fa-facebook"></i>
-                <i class="hover:text-yellow-900 fa-brands fa-instagram"></i>
-                <i class="hover:text-yellow-900 fa-brands fa-x-twitter"></i>
-            </div>
-        </div>
+    <!-- contact section ends -->
 
-  
+
     <!-- Footer -->
     <footer class=" text-white w-full text-center text-xl py-6 mt-6 ">
         <h1 class="text-3xl font-extrabold">CHIPS</h1>
@@ -301,6 +334,6 @@
 
 
 </body>
-<script src="../script.js"></script>
+<script src="script.js"></script>
 
 </html>
